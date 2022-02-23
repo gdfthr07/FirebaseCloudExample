@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "358276481032",
+    "project_id": "manav-depo",
+    "storage_bucket": "manav-depo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358276481032:android:bb810d0ec0f0b2ae3a51bd",
+        "android_client_info": {
+          "package_name": "com.example.therich"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358276481032-3nbb0cslc53pj8g0qq5algki7629k9lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApiFYRaRUr767sdWJ-KQEFKv7b_8EhtiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358276481032-3nbb0cslc53pj8g0qq5algki7629k9lc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "358276481032-1j2htibl5ke6630u81tb5o81n7jo1d3i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.manavDep"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
