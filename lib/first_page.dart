@@ -25,7 +25,7 @@ class _FirstPageState extends State<FirstPage> {
             stream: FirebaseFirestore.instance.collection('bank1').snapshots(),
             builder:
                 (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-              print('hi guys?');
+              
               return GridView(
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2, childAspectRatio: 16 / 10),
