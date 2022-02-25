@@ -23,17 +23,19 @@ class _FirstPageState extends State<FirstPage> {
           ),
           body: StreamBuilder(
             stream: FirebaseFirestore.instance.collection('bank1').snapshots(),
-            builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
-              return GridView(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2,
-              childAspectRatio: 16/10),
-                children: snapshot.data!.docs.map((e) =>  MyCard(e)).toList(),
+            builder:
+                (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+              print('hi guys?');
+              return GridView(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2, childAspectRatio: 16 / 10),
+                children: snapshot.data!.docs.map((e) => MyCard(e)).toList(),
               );
-
-
-          },),
-          floatingActionButton:   FloatingActionButton(
+            },
+          ),
+          floatingActionButton: FloatingActionButton(
             child: const Icon(Icons.add),
-            onPressed: (){
+            onPressed: () {
               print('calsiti');
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => const AddNew()));
